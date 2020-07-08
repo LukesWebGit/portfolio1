@@ -1,0 +1,92 @@
+$color1: #000
+$color2: #FFF
+
+$light1: $color1
+$light2: #222
+$dark1: $color2
+
+html
+  height: 100vh
+  width: 100vw
+  background: #ccc
+  margin: 0
+  padding: 0
+
+  /* DELETE:
+  color: white
+  /* ---------
+
+body
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+
+
+main
+  margin: 0
+  padding: 0
+  display: grid
+  grid-template-columns: 100%
+
+nav
+  position: fixed
+  top: 0
+  width: 100%
+  transition: top 300ms
+  & div
+    background: $dark1
+    position: absolute
+    padding: 1em
+    color: $light1
+
+.navigation
+  display: flex
+  flex-flow: row wrap
+  justify-content: flex-end
+  list-style: none
+  margin: 0
+  padding: 0
+  background: $dark1
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  & a
+    text-decoration: none
+    display: block
+    padding: 1em
+    color: $light1
+    transition: 300ms all ease-in-out
+    &:hover
+      color: $light2
+
+
+.titlepic
+  width: 100%
+
+.titletxt
+  width: 100%
+  text-align: center
+  position: absolute
+  top: 300px
+  font-size: 4em
+
+
+.cardarea
+  padding: 50px
+  position: absolute
+  width: 95%
+  top: 700px
+  display: grid
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr))
+  grid-gap: 20px
+  & .card
+    border-radius: 20px
+    color: $light1
+    background: $dark1
+    transition: all 500ms ease-in-out
+    box-shadow: 0 0 10px #000
+    & img
+      border-radius: 20px 20px 0 0
+      width: 100%
+    & p
+      padding: 20px
+  & .card:hover
+    transform: translateY(-20px)
